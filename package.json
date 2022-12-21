@@ -3,6 +3,7 @@
   "version": "1.0.10",
   "main": "./lib/index.cjs",
   "type": "module",
+  "types": "./device.d.ts",
   "author": {
     "name": "Jonathan Perry for Sequence Media Limited",
     "email": "sequencemedia@sequencemedia.net",
@@ -16,7 +17,7 @@
   "scripts": {
     "build": "npm run babel",
     "watch": "npm run babel -- -w",
-    "clean": "rimraf lib",
+    "clean": "rimraf lib/!*.ts",
     "babel": "babel src -d lib --out-file-extension .cjs",
     "prepublishOnly": "npm run build",
     "prebuild": "npm run clean",
@@ -27,7 +28,8 @@
     "coverage": "c8 --reporter html npm run test"
   },
   "dependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "debug": "^4.3.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
