@@ -11,3 +11,6 @@
 
 # Deps
 .depsrc
+
+# NYC
+coverage
