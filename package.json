@@ -26,6 +26,9 @@
     "test": "cross-env NODE_ENV=test mocha test --recursive --verbose --color",
     "coverage": "c8 --reporter html npm run test"
   },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.5",
@@ -49,8 +52,5 @@
   "exports": {
     "import": "./src/index.mjs",
     "require": "./lib/index.cjs"
-  },
-  "dependencies": {
-    "cross-env": "^7.0.3"
   }
 }
