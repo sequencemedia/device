@@ -12,7 +12,7 @@ export function getWindowLocationOrigin ({
   location: {
     origin = '//localhost'
   } = {}
-} = global) {
+} = globalThis) {
   return origin
 }
 
@@ -20,7 +20,7 @@ export function getWindowLocationProtocol ({
   location: {
     protocol = 'http'
   } = {}
-} = global) {
+} = globalThis) {
   return protocol
 }
 
@@ -28,7 +28,7 @@ export function getWindowLocationHostname ({
   location: {
     hostname = 'localhost'
   } = {}
-} = global) {
+} = globalThis) {
   return hostname
 }
 
@@ -36,7 +36,7 @@ export function getWindowLocationHost ({
   location: {
     host = 'localhost'
   } = {}
-} = global) {
+} = globalThis) {
   return host
 }
 
@@ -44,7 +44,7 @@ export function getWindowLocationPort ({
   location: {
     port = PORT
   } = {}
-} = global) {
+} = globalThis) {
   return port
 }
 
@@ -52,7 +52,7 @@ export function getWindowLocationHref ({
   location: {
     href = '//localhost'
   } = {}
-} = global) {
+} = globalThis) {
   return href
 }
 
