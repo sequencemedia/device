@@ -1,0 +1,46 @@
+{
+  "name": "@sequencemedia/device",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./lib/index.cjs",
+  "type": "module",
+  "author": {
+    "name": "Jonathan Perry for Sequence Media Limited",
+    "email": "sequencemedia@sequencemedia.net",
+    "url": "http://sequencemedia.net"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sequencemedia/device.git"
+  },
+  "scripts": {
+    "build": "npm run babel",
+    "watch": "npm run babel -- -w",
+    "clean": "rimraf lib",
+    "babel": "babel src -d lib --out-file-extension .cjs",
+    "prepublishOnly": "npm run build",
+    "prebuild": "npm run clean",
+    "lint": "eslint . --ext .mjs --ext .cjs",
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.20.2",
+    "@sequencemedia/hooks": "^1.0.287",
+    "core-js": "^3.26.1",
+    "eslint": "^8.30.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.2"
+  },
+  "exports": {
+    "import": "./src/index.mjs",
+    "require": "./lib/index.cjs"
+  }
+}
