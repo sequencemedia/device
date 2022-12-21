@@ -14,3 +14,4 @@
 
 # NYC
 coverage
+.nyc_output
