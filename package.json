@@ -1,7 +1,7 @@
 {
   "name": "@sequencemedia/device",
   "version": "1.0.213",
-  "main": "./lib/index.cjs",
+  "main": "./src/index.mjs",
   "type": "module",
   "types": "./device.d.ts",
   "author": {
@@ -15,12 +15,6 @@
     "url": "git@github.com:sequencemedia/device.git"
   },
   "scripts": {
-    "build": "npm run babel",
-    "watch": "npm run babel -- -w",
-    "clean": "rimraf lib/!*.ts",
-    "babel": "babel src -d lib --out-file-extension .cjs",
-    "prepublishOnly": "npm run build",
-    "prebuild": "npm run clean",
     "lint": "eslint . --ext .mjs --ext .cjs",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install",
@@ -28,11 +22,10 @@
     "coverage": "c8 --reporter html npm run test"
   },
   "dependencies": {
-    "cross-env": "^7.0.3",
     "debug": "^4.3.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.21.5",
+    "cross-env": "^7.0.3",
     "@babel/core": "^7.22.1",
     "@babel/eslint-parser": "^7.21.8",
     "@babel/preset-env": "^7.22.4",
@@ -52,7 +45,6 @@
     "sinon-chai": "^3.7.0"
   },
   "exports": {
-    "import": "./src/index.mjs",
-    "require": "./lib/index.cjs"
+    ".": "./src/index.mjs"
   }
 }
