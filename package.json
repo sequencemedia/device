@@ -1,7 +1,7 @@
 {
   "name": "@sequencemedia/device",
   "version": "1.2.0",
-  "main": "./src/index.mjs",
+  "main": "./src/index.cjs",
   "type": "module",
   "types": "./device.d.ts",
   "author": {
@@ -28,6 +28,7 @@
     "@babel/core": "^7.22.5",
     "@babel/eslint-parser": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
+    "@babel/register": "^7.22.5",
     "@sequencemedia/hooks": "^1.0.435",
     "c8": "^8.0.0",
     "chai": "^4.3.7",
@@ -45,6 +46,9 @@
     "sinon-chai": "^3.7.0"
   },
   "exports": {
-    ".": "./src/index.mjs"
+    ".": {
+      "import": "./src/index.mjs",
+      "require": "./src/index.cjs"
+    }
   }
 }
