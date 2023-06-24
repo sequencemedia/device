@@ -16,7 +16,7 @@ import {
   getRequestHeadersCookie
 } from '@sequencemedia/device/express'
 
-describe.only('@sequencemedia/device/express', () => {
+describe('@sequencemedia/device/express', () => {
   describe('`getRequestSocket`', () => it('is a function', () => expect(getRequestSocket).to.be.a('function')))
 
   describe('`isRequestSocketEncrypted`', () => it('is a function', () => expect(isRequestSocketEncrypted).to.be.a('function')))
@@ -88,7 +88,7 @@ describe.only('@sequencemedia/device/express', () => {
   })
 
   describe('`getRequestHeadersAccept()`', () => {
-    describe('`accept` is defined', () => it('returns a string', () => expect(getRequestHeadersAccept({ headers: { accept: 'MOCK ACCEPT' } })).to.equal('MOCK ACCEPT')))
+    describe('`accept` is defined', () => it('returns astring', () => expect(getRequestHeadersAccept({ headers: { accept: 'MOCK ACCEPT' } })).to.equal('MOCK ACCEPT')))
 
     describe('`accept` is not defined', () => it('returns undefined', () => expect(getRequestHeadersAccept({})).to.be.undefined))
   })
