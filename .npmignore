@@ -22,6 +22,9 @@
 # Deps
 .depsrc
 
+# Mocha
+test
+
 # NYC
 coverage
 .nyc_output
