@@ -3,6 +3,7 @@ import {
 } from 'chai'
 
 import {
+  getWindowLocation,
   getWindowLocationOrigin,
   getWindowLocationProtocol,
   getWindowLocationHostname,
@@ -15,6 +16,8 @@ import {
 } from '@sequencemedia/device'
 
 describe('@sequencemedia/device', () => {
+  describe('`getWindowLocation`', () => it('is a function', () => expect(getWindowLocation).to.be.a('function')))
+
   describe('`getWindowLocationOrigin`', () => it('is a function', () => expect(getWindowLocationOrigin).to.be.a('function')))
 
   describe('`getWindowLocationProtocol`', () => it('is a function', () => expect(getWindowLocationProtocol).to.be.a('function')))
@@ -32,6 +35,13 @@ describe('@sequencemedia/device', () => {
   describe('`isDefaultPort`', () => it('is a function', () => expect(isDefaultPort).to.be.a('function')))
 
   describe('`isDefaultSecurePort`', () => it('is a function', () => expect(isDefaultSecurePort).to.be.a('function')))
+
+  describe('`getWindowLocation()`', () => {
+    const MOCK_LOCATION = {}
+    describe('`location` is defined', () => it('returns an object', () => expect(getWindowLocation({ location: MOCK_LOCATION })).to.equal(MOCK_LOCATION)))
+
+    describe('`location` is not defined', () => it('returns an object', () => expect(getWindowLocation()).to.eql({})))
+  })
 
   describe('`getWindowLocationOrigin()`', () => {
     describe('`origin` is defined', () => it('returns a string', () => expect(getWindowLocationOrigin({ location: { origin: 'MOCK ORIGIN' } })).to.equal('MOCK ORIGIN')))

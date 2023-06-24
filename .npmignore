@@ -21,3 +21,7 @@
 
 # Deps
 .depsrc
+
+# NYC
+coverage
+.nyc_output

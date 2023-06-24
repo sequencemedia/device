@@ -8,51 +8,57 @@ export const PORT = 80
 
 export const SECURE_PORT = 443
 
-export function getWindowLocationOrigin ({
-  location: {
-    origin = '//localhost'
-  } = {}
+export function getWindowLocation ({
+  location = {}
 } = globalThis) {
+  return location
+}
+
+export function getWindowLocationOrigin (context) {
+  const {
+    origin = '//localhost'
+  } = getWindowLocation(context)
+
   return origin
 }
 
-export function getWindowLocationProtocol ({
-  location: {
+export function getWindowLocationProtocol (context) {
+  const {
     protocol = 'http'
-  } = {}
-} = globalThis) {
+  } = getWindowLocation(context)
+
   return protocol
 }
 
-export function getWindowLocationHostname ({
-  location: {
+export function getWindowLocationHostname (context) {
+  const {
     hostname = 'localhost'
-  } = {}
-} = globalThis) {
+  } = getWindowLocation(context)
+
   return hostname
 }
 
-export function getWindowLocationHost ({
-  location: {
+export function getWindowLocationHost (context) {
+  const {
     host = 'localhost'
-  } = {}
-} = globalThis) {
+  } = getWindowLocation(context)
+
   return host
 }
 
-export function getWindowLocationPort ({
-  location: {
+export function getWindowLocationPort (context) {
+  const {
     port = PORT
-  } = {}
-} = globalThis) {
+  } = getWindowLocation(context)
+
   return port
 }
 
-export function getWindowLocationHref ({
-  location: {
+export function getWindowLocationHref (context) {
+  const {
     href = '//localhost'
-  } = {}
-} = globalThis) {
+  } = getWindowLocation(context)
+
   return href
 }
 

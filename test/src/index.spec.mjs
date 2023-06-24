@@ -4,6 +4,7 @@ import {
 
 import {
   getWindowDocument,
+  getWindowLocation,
   getWindowLocationOrigin,
   getWindowLocationProtocol,
   getWindowLocationHostname,
@@ -17,6 +18,8 @@ import {
 
 describe('@sequencemedia/device', () => {
   describe('`getWindowDocument`', () => it('is a function', () => expect(getWindowDocument).to.be.a('function')))
+
+  describe('`getWindowLocation`', () => it('is a function', () => expect(getWindowLocation).to.be.a('function')))
 
   describe('`getWindowLocationOrigin`', () => it('is a function', () => expect(getWindowLocationOrigin).to.be.a('function')))
 
