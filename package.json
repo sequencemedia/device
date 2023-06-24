@@ -49,6 +49,10 @@
     ".": {
       "import": "./src/index.mjs",
       "require": "./src/index.cjs"
+    },
+    "./express": {
+      "import": "./src/express/index.mjs",
+      "require": "./src/express/index.cjs"
     }
   }
 }

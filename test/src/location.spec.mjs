@@ -88,6 +88,6 @@ describe('@sequencemedia/device', () => {
   describe('`isDefaultSecurePort()`', () => {
     describe('`port` is 443', () => it('returns true', () => expect(isDefaultSecurePort({ location: { port: 443 } })).to.be.true))
 
-    describe('`port` is not 444', () => it('returns false', () => expect(isDefaultSecurePort({ location: { port: 444 } })).to.be.false))
+    describe('`port` is not 443', () => it('returns false', () => expect(isDefaultSecurePort({ location: { port: 444 } })).to.be.false))
   })
 })
