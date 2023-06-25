@@ -11,6 +11,9 @@ import {
   getWindowLocationHost,
   getWindowLocationPort,
   getWindowLocationHref,
+  getWindowLocationHash,
+  getWindowLocationPathname,
+  getWindowLocationSearch,
   isSecure,
   isDefaultPort,
   isDefaultSecurePort
@@ -32,6 +35,12 @@ describe('@sequencemedia/device', () => {
   describe('`getWindowLocationPort`', () => it('is a function', () => expect(getWindowLocationPort).to.be.a('function')))
 
   describe('`getWindowLocationHref`', () => it('is a function', () => expect(getWindowLocationHref).to.be.a('function')))
+
+  describe('`getWindowLocationHash`', () => it('is a function', () => expect(getWindowLocationHash).to.be.a('function')))
+
+  describe('`getWindowLocationPathname`', () => it('is a function', () => expect(getWindowLocationPathname).to.be.a('function')))
+
+  describe('`getWindowLocationSearch`', () => it('is a function', () => expect(getWindowLocationSearch).to.be.a('function')))
 
   describe('`isSecure`', () => it('is a function', () => expect(isSecure).to.be.a('function')))
 

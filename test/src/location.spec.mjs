@@ -10,6 +10,9 @@ import {
   getWindowLocationHost,
   getWindowLocationPort,
   getWindowLocationHref,
+  getWindowLocationHash,
+  getWindowLocationPathname,
+  getWindowLocationSearch,
   isSecure,
   isDefaultPort,
   isDefaultSecurePort
@@ -29,6 +32,12 @@ describe('@sequencemedia/device', () => {
   describe('`getWindowLocationPort`', () => it('is a function', () => expect(getWindowLocationPort).to.be.a('function')))
 
   describe('`getWindowLocationHref`', () => it('is a function', () => expect(getWindowLocationHref).to.be.a('function')))
+
+  describe('`getWindowLocationHash`', () => it('is a function', () => expect(getWindowLocationHash).to.be.a('function')))
+
+  describe('`getWindowLocationPathname`', () => it('is a function', () => expect(getWindowLocationPathname).to.be.a('function')))
+
+  describe('`getWindowLocationSearch`', () => it('is a function', () => expect(getWindowLocationSearch).to.be.a('function')))
 
   describe('`isSecure`', () => it('is a function', () => expect(isSecure).to.be.a('function')))
 
@@ -52,7 +61,7 @@ describe('@sequencemedia/device', () => {
   describe('`getWindowLocationProtocol()`', () => {
     describe('`protocol` is defined', () => it('returns a string', () => expect(getWindowLocationProtocol({ location: { protocol: 'MOCK PROTOCOL' } })).to.equal('MOCK PROTOCOL')))
 
-    describe('`protocol` is not defined', () => it('returns a string', () => expect(getWindowLocationProtocol()).to.equal('http')))
+    describe('`protocol` is not defined', () => it('returns a string', () => expect(getWindowLocationProtocol()).to.equal('http:')))
   })
 
   describe('`getWindowLocationHostname()`', () => {
@@ -77,6 +86,24 @@ describe('@sequencemedia/device', () => {
     describe('`href` is defined', () => it('returns a string', () => expect(getWindowLocationHref({ location: { href: 'MOCK HREF' } })).to.equal('MOCK HREF')))
 
     describe('`href` is not defined', () => it('returns a string', () => expect(getWindowLocationHref()).to.equal('//localhost')))
+  })
+
+  describe('`getWindowLocationHash()`', () => {
+    describe('`hash` is defined', () => it('returns a string', () => expect(getWindowLocationHash({ location: { hash: 'MOCK HASH' } })).to.equal('MOCK HASH')))
+
+    describe('`hash` is not defined', () => it('returns a string', () => expect(getWindowLocationHash()).to.equal('')))
+  })
+
+  describe('`getWindowLocationPathname()`', () => {
+    describe('`pathname` is defined', () => it('returns a string', () => expect(getWindowLocationPathname({ location: { pathname: 'MOCK PATHNAME' } })).to.equal('MOCK PATHNAME')))
+
+    describe('`pathname` is not defined', () => it('returns a string', () => expect(getWindowLocationPathname()).to.equal('/')))
+  })
+
+  describe('`getWindowLocationSearch()`', () => {
+    describe('`search` is defined', () => it('returns a string', () => expect(getWindowLocationSearch({ location: { search: 'MOCK SEARCH' } })).to.equal('MOCK SEARCH')))
+
+    describe('`search` is not defined', () => it('returns a string', () => expect(getWindowLocationSearch()).to.equal('')))
   })
 
   describe('`isSecure()`', () => {

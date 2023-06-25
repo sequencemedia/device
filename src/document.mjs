@@ -4,8 +4,10 @@ const log = debug('@sequencemedia/device')
 
 log('`@sequencemedia/device` is awake')
 
-export function getWindowDocument ({
-  document = {}
-} = globalThis) {
+export function getWindowDocument (context = globalThis) {
+  const {
+    document = {}
+  } = context
+
   return document
 }
