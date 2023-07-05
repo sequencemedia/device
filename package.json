@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/device",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "main": "./src/index.cjs",
   "type": "module",
   "types": "./device.d.ts",
