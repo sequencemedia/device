@@ -16,7 +16,7 @@ const {
   isSecure,
   isDefaultPort,
   isDefaultSecurePort
-} = require('@sequencemedia/device')
+} = require('@sequencemedia/device/location')
 
 describe('@sequencemedia/device', () => {
   describe('`getWindowLocation`', () => it('is a function', () => expect(getWindowLocation).to.be.a('function')))

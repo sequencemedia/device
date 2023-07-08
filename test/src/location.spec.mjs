@@ -16,7 +16,7 @@ import {
   isSecure,
   isDefaultPort,
   isDefaultSecurePort
-} from '@sequencemedia/device'
+} from '@sequencemedia/device/location'
 
 describe('@sequencemedia/device', () => {
   describe('`getWindowLocation`', () => it('is a function', () => expect(getWindowLocation).to.be.a('function')))

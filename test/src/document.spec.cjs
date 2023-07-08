@@ -4,7 +4,7 @@ const {
 
 const {
   getWindowDocument
-} = require('@sequencemedia/device')
+} = require('@sequencemedia/device/document')
 
 describe('@sequencemedia/device', () => {
   describe('`getWindowDocument`', () => it('is a function', () => expect(getWindowDocument).to.be.a('function')))

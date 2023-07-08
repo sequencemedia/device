@@ -4,7 +4,7 @@ import {
 
 import {
   getWindowDocument
-} from '@sequencemedia/device'
+} from '@sequencemedia/device/document'
 
 describe('@sequencemedia/device', () => {
   describe('`getWindowDocument`', () => it('is a function', () => expect(getWindowDocument).to.be.a('function')))
