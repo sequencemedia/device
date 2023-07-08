@@ -1,7 +1,5 @@
-require('@babel/register')
-
-const document = require('./document.mjs')
-const location = require('./location.mjs')
+const document = require('./document.cjs')
+const location = require('./location.cjs')
 
 module.exports = {
   ...document,

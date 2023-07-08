@@ -1,7 +1,7 @@
 {
   "name": "@sequencemedia/device",
   "version": "1.2.14",
-  "main": "./src/index.cjs",
+  "main": "./src/index.mjs",
   "type": "module",
   "types": "./device.d.ts",
   "author": {
