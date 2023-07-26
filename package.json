@@ -30,7 +30,7 @@
     "@babel/preset-env": "^7.22.9",
     "@babel/register": "^7.22.5",
     "@sequencemedia/hooks": "^1.0.443",
-    "c8": "^8.0.0",
+    "c8": "^8.0.1",
     "chai": "^4.3.7",
     "core-js": "^3.31.1",
     "cross-env": "^7.0.3",
