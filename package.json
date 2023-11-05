@@ -29,7 +29,7 @@
     "@babel/eslint-parser": "^7.22.15",
     "@babel/preset-env": "^7.23.2",
     "@babel/register": "^7.22.15",
-    "@sequencemedia/hooks": "^1.0.460",
+    "@sequencemedia/hooks": "^1.0.461",
     "c8": "^8.0.1",
     "chai": "^4.3.10",
     "core-js": "^3.33.2",
