@@ -25,11 +25,11 @@
     "debug": "^4.3.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
+    "@babel/core": "^7.24.8",
+    "@babel/preset-env": "^7.24.8",
     "@babel/register": "^7.24.6",
-    "@sequencemedia/eslint-config-standard": "^0.0.10",
-    "@sequencemedia/hooks": "^1.0.500",
+    "@sequencemedia/eslint-config-standard": "^0.0.11",
+    "@sequencemedia/hooks": "^1.0.501",
     "@sequencemedia/sinon-chai": "^0.0.9",
     "c8": "^10.1.2",
     "chai": "^5.1.1",
