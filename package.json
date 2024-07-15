@@ -25,12 +25,12 @@
     "debug": "^4.3.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.8",
+    "@babel/core": "^7.24.9",
     "@babel/preset-env": "^7.24.8",
     "@babel/register": "^7.24.6",
-    "@sequencemedia/eslint-config-standard": "^0.0.13",
-    "@sequencemedia/hooks": "^1.0.503",
-    "@sequencemedia/sinon-chai": "^0.0.9",
+    "@sequencemedia/eslint-config-standard": "^0.0.14",
+    "@sequencemedia/hooks": "^1.0.504",
+    "@sequencemedia/sinon-chai": "^0.0.10",
     "c8": "^10.1.2",
     "chai": "^5.1.1",
     "core-js": "^3.37.1",
