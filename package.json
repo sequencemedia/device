@@ -22,7 +22,7 @@
     "test": "cross-env NODE_ENV=test mocha test --recursive --verbose --color"
   },
   "dependencies": {
-    "debug": "^4.3.5"
+    "debug": "^4.3.6"
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
@@ -30,7 +30,7 @@
     "@babel/register": "^7.24.6",
     "@sequencemedia/eslint-config-standard": "^0.0.17",
     "@sequencemedia/hooks": "^1.0.507",
-    "@sequencemedia/sinon-chai": "^0.0.10",
+    "@sequencemedia/sinon-chai": "^0.0.12",
     "c8": "^10.1.2",
     "chai": "^5.1.1",
     "core-js": "^3.37.1",
