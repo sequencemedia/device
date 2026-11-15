@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/device",
-  "version": "1.2.377",
+  "version": "1.2.378",
   "main": "./src/index.mjs",
   "type": "module",
   "types": "./device.d.mts",
